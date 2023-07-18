@@ -1,0 +1,26 @@
+.select{
+    font-size: 15px;
+    font-weight:bold;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 25px 10px 25px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    margin: 10px 10px;
+    font-size: 20px;
+    color:black;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+.filters{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+}

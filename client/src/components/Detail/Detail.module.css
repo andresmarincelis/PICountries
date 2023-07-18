@@ -1,0 +1,35 @@
+.detailContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: skyblue;
+    background-position: center;
+    width: 400px; /* Ajusta el ancho según tus necesidades */
+    max-width: 100%; /* Establece una anchura máxima */
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 10px; /* Reduce el espacio interno */
+    margin: 10px; /* Reduce el espacio externo */
+  }
+  
+  .card_img {
+    border: 2px transparent;
+    max-width: 80%; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    padding-top: 20px;
+  }
+  
+  
+  .nameH3 {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+  }
+
+  

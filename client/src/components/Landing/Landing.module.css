@@ -1,0 +1,32 @@
+/* .background {
+  background-image: url('../../assets/hands-g298486f4a_1920.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+} */
+
+.button {
+  font-weight: bold;
+  position: relative;
+  margin-left: 90px;
+  border-radius: 5px;
+  border: solid black 1px;
+  background: whitesmoke;
+  color: black;
+  font-size: 15px;
+  max-width: 200px;
+  min-width: 200px;
+  max-height: 50px;
+  min-height: 50px;
+  margin-top: 23px;
+}
+
+.button:hover {
+  box-shadow: inset 0 0 10px skyblue;
+  font-size: 20px;
+}

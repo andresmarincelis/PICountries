@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import validate from '../Validate/Validate';
+import validate from '../../helper/validate';
 import { createActivity, getActivity, getAllCountries } from '../../redux/actions';
 
 import style from './Form.module.css'
@@ -20,10 +20,6 @@ const Form = () => {
     paisSeleccionado: "",
     pais: [],
   });
-
-  useEffect(() => {
-    console.log(actividad);
-  }, [actividad, actividad.pais])
 
   const handleChange = (event) => {
     const property = event.target.name;
@@ -44,10 +40,6 @@ const Form = () => {
       });
     }
   };
-
-  useEffect(() => {
-    console.log(actividad);
-  }, [actividad], actividad.pais)
 
   const handleRemoveCountry = (countryId) => {
     const updatedCountries = selectedCountries.filter((country) => country.id !== countryId);
@@ -93,7 +85,7 @@ const Form = () => {
       <div className={style.formContainer}>
         <div style={{textAlign: 'center'}}>
           <h2>Crear Actividad</h2>
-          <form onSubmit={handleSubmit} type="submit">
+          <form onSubmit={handleSubmit}>
             <div className={style.credentials}>
               <label>Nombre Actividad: </label>
               <input
@@ -165,11 +157,11 @@ const Form = () => {
                 ))}
               </div>
             </div>
-          </form>
-        </div>
             <div style={{marginTop: 'auto'}}>
               <button className={style.submitBtn}>Crear Actividad</button>
             </div>
+          </form>
+        </div>
       </div>
     </div>
   )

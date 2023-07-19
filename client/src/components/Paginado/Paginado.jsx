@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from "react-redux";
 import Card from "../Card/Card";
 
-import style from "./Container.module.css";
+import style from "./Paginado.module.css";
 
 
-const Container = () => {
+const Paginado = () => {
 
     const countries = useSelector(state => state.filtrados);
     const [filteredCountries, setFilteredCountries] = useState([]);
@@ -55,4 +55,4 @@ const Container = () => {
     );
 }
 
-export default Container;
+export default Paginado;

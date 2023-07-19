@@ -1,4 +1,4 @@
-import Container from '../Container/Container';
+import Paginado from '../Paginado/Paginado';
 import NavBar from '../NavBar/NavBar';
 
 
@@ -10,7 +10,7 @@ const Home = () => {
 
     <div className={style.homeContainer}>
       <NavBar />
-      <Container />
+      <Paginado />
     </div>
   );
 };

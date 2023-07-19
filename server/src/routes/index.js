@@ -2,7 +2,7 @@ const { Router } = require("express");
 const { uploadCountries, getCountries, countriesById } = require("../controllers/countries");
 const { createActivities, getActivities } = require("../controllers/activities");
 
-const router = Router();
+const router = Router(); // para instanciar Router
 
 router.get('/countries/:idPais', countriesById)
 

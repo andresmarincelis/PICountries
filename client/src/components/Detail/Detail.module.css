@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: skyblue;
+    background-color: rgba(135, 206, 235, 0.6);
     background-position: center;
     width: 400px; /* Ajusta el ancho según tus necesidades */
     max-width: 100%; /* Establece una anchura máxima */
     border: 2px solid black;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 10px; /* Reduce el espacio interno */
     margin: 10px; /* Reduce el espacio externo */
   }

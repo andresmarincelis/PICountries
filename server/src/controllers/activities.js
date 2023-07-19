@@ -1,4 +1,5 @@
 const { Activities, Country } = require('../db')
+//pais = arrays con ids que nos otorga el formulario
 
 const createActivities = async (req, res) => {
     try {

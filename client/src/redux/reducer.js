@@ -26,7 +26,7 @@ export default function rootReducer(state = initialState, action) {
             return {
                 ...state,
                 allCountries: action.payload, //.sort((a, b) => a.name > b.name ? 1 : -1)
-                filtrados: action.payload,
+                filtrados: action.payload, //es lo que se va a mostrar
             }
 
         case ORDERBYAZ:

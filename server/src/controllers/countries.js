@@ -20,7 +20,7 @@ const uploadCountries = async (req, res) => {
                 area: data[i].area,
                 poblacion: data[i].population,
             }
-            await Country.create(newCountry)
+            await Country.create(newCountry) //con esto lleno la base de datos
         }
         res.send("Agregados!")
     } catch (error) {

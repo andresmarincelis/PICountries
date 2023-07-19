@@ -1,6 +1,6 @@
 .navBar{
     height: min-content;
-    background-color: skyblue;
+    background-color: rgba(135, 206, 235, 0.6);
     width: 280px;
     display: flex;
     flex-direction: column;

@@ -96,7 +96,12 @@ const countriesById = async (req, res) => {
                 id: {
                     [Op.iLike]: `%${idPais}%`
                 }
-            }
+            },
+            include: [
+                {
+                    model: Activities,
+                }
+            ]
         });
         res.send(country)
     } catch (error) {

@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { orderByAZ, orderByContinents, orderByPopulation, resetFilters, filterByActivity } from '../../redux/actions';
+// import { orderByAZ, orderByContinents, orderByPopulation, resetFilters, filterByActivity } from '../../redux/actions';
+import { orderByAZ, orderByContinents, orderByPopulation, resetFilters } from '../../reduxTK/slices/countriesSlice';
+import { filterByActivity } from '../../reduxTK/slices/activitiesSlice';
 
 import style from './Filtros.module.css'
 
 const Filtros = () => {
 
-    const activities = useSelector((state) => state.allActivities)
+    const activities = useSelector((state) => state.activities.allActivities)
 
     const dispatch = useDispatch();
     const [byContinent, setByContinent] = useState('None');
@@ -92,9 +94,9 @@ const Filtros = () => {
             <div>
                 <select className={style.select} value={activity} onChange={filtradoActivities}>
                     <option value="">Elige una actividad</option>
-                    {activities.map((actividad) => {
+                    {activities && activities.map((actividad, index) => {
                         return (
-                            <option value={actividad.name}>{actividad.name}</option>
+                            <option key={index} value={actividad.name}>{actividad.name}</option>
                         );
                     })}
                 </select>

@@ -2,14 +2,16 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import validate from '../../helper/validate';
-import { createActivity, getActivity, getAllCountries } from '../../redux/actions';
+// import { createActivity, getActivity, getAllCountries } from '../../redux/actions';
+import { createActivity, getActivity } from '../../reduxTK/slices/activitiesThunk';
+import { getAllCountries } from '../../reduxTK/slices/countriesThunk';
 
 import style from './Form.module.css'
 
 const Form = () => {
 
   const dispatch = useDispatch();
-  const countries = useSelector((state) => state.allCountries);
+  const countries = useSelector((state) => state.countries.allCountries);
   const [selectedCountries, setSelectedCountries] = useState([]);
 
   const [actividad, setActividad] = useState({

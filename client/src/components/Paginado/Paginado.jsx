@@ -7,7 +7,7 @@ import style from "./Paginado.module.css";
 
 const Paginado = () => {
 
-    const countries = useSelector(state => state.filtrados);
+    const countries = useSelector(state => state.countries.filtrados);
     const [filteredCountries, setFilteredCountries] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const COUNTRIES_PER_PAGE = 10;

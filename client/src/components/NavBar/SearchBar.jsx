@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { searchCountry } from '../../redux/actions';
+// import { searchCountry } from '../../redux/actions';
+import { searchCountry } from '../../reduxTK/slices/countriesSlice';
 
 import style from './SearchBar.module.css';
 

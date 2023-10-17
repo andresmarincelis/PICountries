@@ -16,3 +16,8 @@
   padding: 10px;
   background-color: whitesmoke;
 }
+
+.buttonContainer{
+  display: flex;
+  justify-items: auto;
+}

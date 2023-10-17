@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* Centra tanto horizontal como verticalmente */
   background-color: rgba(135, 206, 235, 0.7);
   background-position: center;
-  width: 135px;
+  width: 135px; /* Tamaño fijo para todas las tarjetas */
   border: 1px solid grey;
   border-radius: 15px;
   padding: 10px;
@@ -33,9 +34,9 @@
 
 .countryImage {
   display: flex;
-  display: block;
   max-width: 100px;
   max-height: 80px;
   min-width: 100px;
   max-height: 80px;
+  margin: 0 auto;
 }
